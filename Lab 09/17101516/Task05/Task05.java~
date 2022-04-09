@@ -1,0 +1,14 @@
+public class Task05{
+  public static int pow(int m,int n){
+    if(n==1){
+      return m;
+    }
+    else{
+      return m*pow(m,--n);
+    }
+  }
+  
+  public static void main(String args[]){
+    System.out.println(pow(2,4));
+  }
+}

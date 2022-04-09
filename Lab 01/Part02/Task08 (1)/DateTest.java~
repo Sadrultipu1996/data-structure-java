@@ -1,0 +1,12 @@
+public class DateTest{
+  public static void main(String[]args){
+    Date d = new Date(7,8,1999);
+    System.out.println("Month: "+d.getMonth()+", Day: "+d.getDay()+", Year: "+d.getYear());
+    d.setMonth(5);
+    d.setDay(27);
+    d.setYear(1997);
+    
+    d.displayDate();
+    
+  }
+}

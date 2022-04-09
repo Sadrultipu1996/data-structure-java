@@ -1,0 +1,23 @@
+public class InsertionSort{
+  public static int[] sort(int x[], int i){
+    if(i==x.length){
+      return x;
+    }
+   temp=x[i];
+   int j=i-1;
+   while(j>=0&&x[j]>x[temp]){
+     x[j+1]=x[j];
+   }
+   x[j+1]=temp;
+   
+   return sort(x,i+1);
+  }
+  
+  public static void main(String args[]){
+    int x[]={1,-9,8,4,2,3};
+    int j[]=sort(x,1);
+    for(int i=0;i<x.length;i++){
+      System.out.print(j[i]+" ");
+    }
+  }
+}

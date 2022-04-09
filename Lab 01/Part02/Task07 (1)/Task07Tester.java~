@@ -1,0 +1,33 @@
+public class Task07Tester{
+  public static void main(String[]args){
+    BankAccount acc1= new BankAccount("Aurthy","Mohakhali","001",100);
+    BankAccount acc2= new BankAccount("Mahi","Banani","002",200);
+    BankAccount acc3= new BankAccount("Mridu","Gulshan","003",300);
+    
+    acc1.setName("Aurthy Alam");
+    acc2.setName("Mahi Ali");
+    acc3.setName("Mridu Hasan");
+    
+    acc1.setAddress("66 Mohakhali");
+    acc2.setAddress("37 Banani");
+    acc3.setAddress("01 Gulshan");
+    
+    acc1.setAccountID("111");
+    acc2.setAccountID("222");
+    acc3.setAccountID("333");
+    
+    acc1.setBalance(100);
+    acc2.setBalance(200);
+    acc3.setBalance(300);
+    
+    acc1.addInterest();
+    acc3.addInterest();
+    
+    System.out.println("Name: "+acc1.getName()+", Address: "+acc1.getAddress()+", ID: "+acc1.getAccountID()+", Balance: "+acc1.getBalance()); 
+    System.out.println("Name: "+acc2.getName()+", Address: "+acc2.getAddress()+", ID: "+acc2.getAccountID()+", Balance: "+acc2.getBalance());
+    System.out.println("Name: "+acc3.getName()+", Address: "+acc3.getAddress()+", ID: "+acc3.getAccountID()+", Balance: "+acc3.getBalance());
+      
+    
+  }
+  
+}

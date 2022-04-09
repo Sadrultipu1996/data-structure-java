@@ -1,0 +1,28 @@
+public class SelectionSort{
+  public static int sort(int x[], int i){
+    int maxLocation=0,temp=0;
+    if(i==x.length){
+      return x;
+    }
+    
+   int mainLocation=i;
+   for(int j=i+1;j<x.length;j++){
+     if(x[j]<x[minLocation]){
+       minLocation=j;
+     }
+   }
+   temp=x[i];
+   x[i]=x[minLocation];
+   x[minLocation]=temp;
+   
+   sort(x,--i);
+  }
+  
+  public static void main(String args[]){
+    int x[]={1,9,55,4,0,2};
+    int j[]=sort(x,0);
+    for(int i=0;i<x.length;i++){
+      System.out.print(j[i]+" ");
+    }
+  }
+}

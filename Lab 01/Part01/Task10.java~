@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Task10{
+  
+  public static String season(month, day){
+    if((month>=12 && month<=3)&&(day>=16 && day<=15)){
+      return "Winter";
+    }
+    if((month>=3 && month<=6)&&(day>=16 && day<=15)){
+      return "Spring";
+    }
+    if((month>=6 && month<=9)&&(day>=16 && day<=15)){
+      return "Summer";
+    }
+    if((month>=9 && month<=12)&&(day>=16 && day<=15)){
+      return "Fall";
+    }
+  }
+  
+  public static void main(String[]args){
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter month");
+    int month= sc.nextInt();
+    System.out.println("Enter day");
+    int day= sc.nextInt();
+    String season= season(month,day);
+    System.out.println(season);
+  }
+}

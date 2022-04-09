@@ -1,0 +1,14 @@
+public class Task01{
+  public static boolean firstLast6(int [] arr){
+    boolean b= false;
+    if(arr[0]==6||arr[arr.length-1]==6){
+      b=true;
+    }
+    return b;
+  }
+  public static void main(String[]args){
+    int []arr = {6,1,2,3};
+    boolean b= firstLast6(arr);
+    System.out.println(b);
+  }
+}

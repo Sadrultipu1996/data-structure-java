@@ -1,0 +1,18 @@
+public class Task04{
+  
+  public static String bin(int n){
+    String s="";
+    if(n==0){
+      return "";
+    }
+    else{
+      s=s+(n%2);
+      bin(n/2);
+      return s;
+    }
+  }
+  
+  public static void main(String args[]){
+    System.out.println(bin(16));
+  }
+}
